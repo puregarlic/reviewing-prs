@@ -38,3 +38,9 @@ jobs:
 
               git push origin $TARGET_BRANCH
             fi
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy_docs
