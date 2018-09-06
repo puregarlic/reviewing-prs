@@ -17,5 +17,8 @@
     "gh-pages": "^1.2.0",
     "mdx-deck": "^1.6.7"
   },
-  "name": "reviewing-prs"
+  "name": "reviewing-prs",
+  "dependencies": {
+    "mdx-deck-code-surfer": "^0.4.1"
+  }
 }
