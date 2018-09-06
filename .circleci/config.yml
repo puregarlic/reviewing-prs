@@ -13,7 +13,7 @@ jobs:
           command: npm run build
       - run:
           name: Upload docs to GitHub Pages
-          command: npx gh-pages -r https://$GH_TOKEN@github.com/puregarlic/reviewing-prs.git -d dist -x
+          command: npx gh-pages -r https://$(echo $GH_TOKEN)@github.com/puregarlic/reviewing-prs.git -d dist -x
 
 workflows:
   version: 2
