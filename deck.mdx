@@ -1,4 +1,5 @@
-import { Head } from 'mdx-deck'
+import { Invert } from 'mdx-deck/layouts'
+import { Head, Appear, Notes, Image } from 'mdx-deck'
 
 export { swiss as theme } from 'mdx-deck/themes'
 
@@ -14,9 +15,20 @@ export { swiss as theme } from 'mdx-deck/themes'
 - PRs are like checkpoints
   - Keep unwanted problems out
   - Easy when reviewers are blind
-  - If you don't know what to look for,
-    - Unmotivated/Frustrated/Indifferent
+  - Frustration or indifference
+```
 
+---
+
+<Image src="https://media.giphy.com/media/R459x856IfF6w/giphy.gif" />
+
+---
+
+export default Invert
+
+# Today...
+
+```notes
 We're going to cover
 - Objectives
 - What to look for
@@ -27,14 +39,80 @@ Applies to GitHub, GitLab, and Bitbucket
 
 ---
 
-## Edit this file
+## Objectives
 
-To create your presentation
+<ul>
+  <Appear>
+    <li>Ensure functionality</li>
+    <li>Maintain readable code</li>
+    <li>Prevent technical debt</li>
+    <li>Self-improvement</li>
+  </Appear>
+</ul>
+
+---
+
+## Ensure Functionality
 
 ```notes
-- Create speaker notes in fenced code blocks
+- Bare minimum
+- Tests help to a point
+- Above all, **run it**
+
+## Don't introduce broken code
+
+- Prevents rushed-fixes further down the line
+
+- Essential part of Continuous Integration
 ```
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+## Maintain Readable Code
+
+```notes
+- If you don't know what it does, the next person
+  probably won't either
+- Don't let the writer sit next to you
+- Use a formatter
+
+## If you don't understand the code, it will bite
+
+- Documentation is a multivitamin, not a pain reliever
+```
+
+---
+
+## Prevent Technical Debt
+
+```notes
+- Refactoring *now* is good *late*
+- What's done now is not rushed later
+- Not everybody knows best or alternative
+  practices
+- Ask someone else!
+- Use a linter
+
+## Don't let anyone take the easy way out
+
+- Never be afraid to request changes
+```
+
+---
+
+## Self-Improvement
+
+```notes
+- Exposure to diversity is important
+  - People solve problems differently
+  - People know things that you don't
+- Talk with the code writer _after_ looking
+  over everything
+- Do some research if you need it
+  - Ask an expert
+
+> Do your best to make sure you or the writer
+  learns something new
+
+- Helps you grow as a developer
+```
