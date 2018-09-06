@@ -1,5 +1,10 @@
+# Reviewing PRs
 
-# mdx-deck basic template
+> [Hosted presentation](https://puregarlic.github.io/reviewing-prs)
+
+It's difficult to review PRs — you might not know what to look for, or
+why you're even bothering to do it. This presentation aims to clarify the _why_
+and _how_ questions that inexperienced PR reviewers might have.
 
 This was generated with [mdx-deck][]'s `npm init deck` command.
 
