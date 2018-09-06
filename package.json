@@ -7,7 +7,8 @@
     "build": "mdx-deck build deck.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Brent Jackson",
