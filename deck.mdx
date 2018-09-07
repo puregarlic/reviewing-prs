@@ -2,6 +2,8 @@ import { Invert } from 'mdx-deck/layouts'
 import { Head, Appear, Notes, Image } from 'mdx-deck'
 import { CodeSurfer } from 'mdx-deck-code-surfer'
 
+import { SplitGood, SplitWithTitle } from './layouts'
+
 export { swiss as theme } from 'mdx-deck/themes'
 
 <Head>
@@ -159,3 +161,38 @@ I've prepared this nasty demo code
 
 > Learn something new
 ```
+
+---
+
+export default SplitWithTitle
+
+## Questions You Should Ask
+
+<div>
+
+### Yourself
+
+<ol>
+  <Appear>
+    <li>How does this compare to what I would do?</li>
+    <li>Do I understand what this code is doing?</li>
+    <li>Is this code relatively future-proof?</li>
+  </Appear>
+</ol>
+
+</div>
+
+
+<div>
+
+### Writer
+
+<ol>
+  <Appear>
+    <li>Why did you implement ______ this way?</li>
+    <li>How do you feel about your implementation?</li>
+    <li>What would you improve about your implementation?</li>
+  </Appear>
+</ol>
+
+</div>
