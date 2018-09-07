@@ -1,5 +1,6 @@
 import { Invert } from 'mdx-deck/layouts'
 import { Head, Appear, Notes, Image } from 'mdx-deck'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
 
 export { swiss as theme } from 'mdx-deck/themes'
 
@@ -21,6 +22,10 @@ export { swiss as theme } from 'mdx-deck/themes'
 ---
 
 <Image src="https://media.giphy.com/media/R459x856IfF6w/giphy.gif" />
+
+```notes
+> Probably you
+```
 
 ---
 
@@ -115,4 +120,42 @@ Applies to GitHub, GitLab, and Bitbucket
   learns something new
 
 - Helps you grow as a developer
+```
+
+---
+
+import ultramin from 'prism-react-renderer/themes/ultramin'
+
+<CodeSurfer
+  title="Things to Look For"
+  code={require("!raw-loader!./sample.js")}
+  theme={ultramin}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { tokens: {12: [4, 5, 6, 7, 8, 9], 1: [0], 2: [0, 1]}, notes: 'Use of outdated language features' },
+    { tokens: {1: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], 2: [5, 6, 7, 8, 9]}, notes: 'Not taking advantage of language features' },
+    { range: [4, 7], notes: 'Repetition where iteration should be used'},
+    { tokens: {1: [1], 2: [2], 9: [2], 10: [2]}, notes: 'Inconsistent naming conventions' },
+    { tokens: {9: [2], 12: [7]}, notes: 'Misspelled variable names' },
+    { tokens: {10: [5]}, notes: 'Misspelled strings'},
+    { lines: [12], notes: 'Logging debug messages to the console'},
+    { range: [14, 18], notes: 'Unhandled branching logic'},
+    { range: [20, 24], notes: 'Nested ternaries'}
+  ]}
+/>
+
+```notes
+I've prepared this nasty demo code
+
+... After walking through...
+
+- You might not know that these things are bad
+  - That's okay!
+- You might not know what to suggest instead
+  - Ask someone!
+  - Research!
+
+> Learn something new
 ```
