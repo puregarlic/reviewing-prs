@@ -49,12 +49,14 @@ export const SplitWithTitle = ({ children }) => {
       <Flex
         css={{
           height: '100%',
-          flexDirection: `column`
+          flexDirection: `column`,
+          width: '70%',
+          justifyContent: 'center',
+          margin: 'auto'
         }}
       >
         <Box
           css={{
-            textAlign: 'center',
             display: 'block',
             marginBottom: '1em'
           }}
@@ -78,8 +80,7 @@ export const SplitWithTitle = ({ children }) => {
                 display: 'inline-block',
                 textAlign: 'left',
                 width: 'auto',
-                marginLeft: '15%',
-                marginRight: '5%'
+                marginRight: '10%'
               }}
             >
               {one}
@@ -96,8 +97,7 @@ export const SplitWithTitle = ({ children }) => {
                 display: 'inline-block',
                 textAlign: 'left',
                 width: 'auto',
-                marginLeft: '5%',
-                marginRight: '15%'
+                marginLeft: '10%'
               }}
             >
               {rest}
