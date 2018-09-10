@@ -8,7 +8,7 @@ export default {
     background: 'white'
   },
 
-  font: 'Lato, sans-serif',
+  // font: 'Lato, sans-serif',
   monospace: 'Fira Mono, monospace'
   // Customize your presentation theme here.
   //
